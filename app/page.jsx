@@ -619,7 +619,7 @@ export default function Home() {
 													onClick={() => {
 														const a = document.createElement("a");
 														a.href = finishedAv;
-														a.download = `discord_fake_avatar_decorations_${Date.now()}.gif`;
+														a.download = `bgifs_${Date.now()}.gif`;
 														a.click();
 													}}
 												>
