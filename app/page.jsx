@@ -107,17 +107,17 @@ export default function Home() {
 								backgroundSize: "cover",
 							}}
 						>
-							<h1 className="font-bold text-3xl md:text-5xl ginto">Discord</h1>
-							<h1 className="mb-4 text-2xl md:text-4xl ginto">FAKE AVATAR DECORATIONS</h1>
+							<h1 className="font-bold text-3xl md:text-5xl ginto">BLACKOUT GIFS</h1>
+							<h1 className="mb-4 text-2xl md:text-4xl ginto">CRIE SUA CORAÇÃO GRÁTIS!</h1>
 							<h2 className="text-sm sm:text-base">
-								Create profile pictures with avatar decorations so you can use them in Discord for free without spending money
+								Criando decorações, jogando pro alto e fazendo a festa, chapa neles e de quem falar merda, ah yah.
 							</h2>
 						</div>
 						<div className="flex md:flex-row flex-col items-center md:items-start gap-8 px-8 py-12 w-full max-w-[900px]">
 							{/* SETTINGS */}
 							<div id="settings" className="block select-none grow">
 								{/* UPLOAD AVATAR */}
-								<p className="my-2 font-semibold text-gray-300 text-sm [letter-spacing:.05em] scale-y-90">AVATAR</p>
+								<p className="my-2 font-semibold text-gray-300 text-sm [letter-spacing:.05em] scale-y-90">ICONE</p>
 								<div className="flex sm:flex-row flex-col sm:items-center gap-3">
 									<button
 										type="button"
@@ -142,13 +142,13 @@ export default function Home() {
 												}
 											}}
 										/>
-										Upload image
+										Joga a imagem aqui cuzão
 									</button>
-									<p className="text-center sm:text-left">or</p>
+									<p className="text-center sm:text-left">ou você pode colocar:</p>
 									<input
 										type="text"
 										className="bg-surface1 px-2.5 py-2 rounded transition grow outline-none"
-										placeholder="Enter image URL..."
+										placeholder="O link do icone que deseja"
 										onChange={async (e) => {
 											const res = await fetch(e.target.value);
 											if (res.status < 200 || res.status >= 400) return setAvUrl(null);
@@ -162,7 +162,7 @@ export default function Home() {
 										}}
 									/>
 								</div>
-								<p className="mt-4 mb-2">You can also pick from one of these avatars below</p>
+								<p className="mt-4 mb-2">Icones de teste para atualizações do sistema</p>
 								{/* SELECT AVATAR */}
 								<div className="flex flex-col gap-8 py-1 max-h-[280px] overflow-auto discord-scrollbar">
 									<div className="gap-3 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5 min-[600px]:grid-cols-6 min-[720px]:grid-cols-7 xs:grid-cols-4">
@@ -204,7 +204,7 @@ export default function Home() {
 								<hr />
 
 								{/* SELECT DECORATION */}
-								<p className="my-2 font-semibold text-gray-300 text-sm [letter-spacing:.05em] scale-y-90">AVATAR DECORATION</p>
+								<p className="my-2 font-semibold text-gray-300 text-sm [letter-spacing:.05em] scale-y-90">DECORAÇÕES PIKAS:</p>
 								<div className="flex flex-col gap-8 py-1 max-h-[532px] overflow-auto discord-scrollbar">
 									{decorationsData.map((category, index) => {
 										return (
@@ -371,15 +371,15 @@ export default function Home() {
 										<div className="right-[-4px] bottom-[-4px] absolute border-[5px] border-surface2 bg-[#229f56] rounded-full w-7 h-7"></div>
 									</div>
 									<div className="bg-surface0 m-4 mt-[calc(15rem/4)] p-4 rounded-lg w-[calc(100%-32px)]">
-										<p className="font-semibold text-xl [letter-spacing:.02em]">{name || "Display Name"}</p>
-										<p className="text-sm">{description || "username"}</p>
+										<p className="font-semibold text-xl [letter-spacing:.02em]">{name || "wz"}</p>
+										<p className="text-sm">{description || "deletados"}</p>
 										<hr />
-										<p className="font-semibold text-xs [letter-spacing:.02em] mb-1 scale-y-95">ABOUT ME</p>
+										<p className="font-semibold text-xs [letter-spacing:.02em] mb-1 scale-y-95">SOBRE MIM</p>
 										<p className="text-sm">
-											Hello, this is an example profile so that you can see what the profile picture would actually look like on Discord.
+											/brinks & /bgifs
 										</p>
-										<p className="font-semibold text-xs [letter-spacing:.02em] mt-3 mb-1 scale-y-95">DISCORD MEMBER SINCE</p>
-										<p className="text-sm">May 13, 2015</p>
+										<p className="font-semibold text-xs [letter-spacing:.02em] mt-3 mb-1 scale-y-95">MEMBRO DESDE</p>
+										<p className="text-sm">1 de mai, 2015</p>
 										<button
 											className="flex justify-center items-center gap-2 bg-secondary hover:bg-secondaryAlt mt-3 py-1.5 rounded-[3px] w-full transition"
 											onClick={() => {
@@ -396,7 +396,7 @@ export default function Home() {
 													d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V173.3c0-17-6.7-33.3-18.7-45.3L352 50.7C340 38.7 323.7 32 306.7 32H64zm0 96c0-17.7 14.3-32 32-32H288c17.7 0 32 14.3 32 32v64c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V128zM224 288a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
 												/>
 											</svg>
-											Save image
+											Salvar gif
 										</button>
 									</div>
 								</div>
@@ -406,43 +406,27 @@ export default function Home() {
 										{
 											styled: false,
 											groupStart: true,
-											text: "Look at me I'm a beautiful butterfly",
+											text: "jogando decoração pro alto",
 										},
 										{
 											styled: false,
 											groupStart: false,
-											text: (
-												<>
-													Fluttering in the moonlight <Twemoji emoji={"🌝"} />
-												</>
-											),
+											text: "ah yah",
 										},
 										{
 											styled: false,
 											groupStart: false,
-											text: "Waiting for the day when",
+											text: "dando decorações pros pobres",
 										},
 										{
 											styled: false,
 											groupStart: false,
-											text: "I get a profile picture decoration",
+											text: "ah yah",
 										},
 										{
 											styled: true,
 											groupStart: true,
-											text: (
-												<>
-													{decoUrl ? (
-														<>
-															Yay! Here it is! <Twemoji emoji={"🎉"} />
-														</>
-													) : (
-														<>
-															Hmm... I still don't see it <Twemoji emoji={"🤔"} />
-														</>
-													)}
-												</>
-											),
+											text: " naltic passa fome, ah yah",
 										},
 									].map((m, i) => {
 										return (
@@ -487,7 +471,7 @@ export default function Home() {
 												<div className="flex flex-col">
 													{m.groupStart && (
 														<p className="h-fit font-medium text-base">
-															<span className="mr-1">{name || "Display Name"}</span>
+															<span className="mr-1">{name || "wz"}</span>
 															<span className="ml-1 h-4 text-secondaryLight text-xs">
 																Today at{" "}
 																{[new Date().getHours() % 12, new Date().getMinutes()]
