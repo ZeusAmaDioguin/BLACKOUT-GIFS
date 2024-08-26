@@ -142,13 +142,13 @@ export default function Home() {
 												}
 											}}
 										/>
-										Joga a imagem aqui cuzão
+										UPLOAD
 									</button>
-									<p className="text-center sm:text-left">ou você pode colocar:</p>
+									<p className="text-center sm:text-left">ou</p>
 									<input
 										type="text"
 										className="bg-surface1 px-2.5 py-2 rounded transition grow outline-none"
-										placeholder="O link do icone que deseja"
+										placeholder="URL"
 										onChange={async (e) => {
 											const res = await fetch(e.target.value);
 											if (res.status < 200 || res.status >= 400) return setAvUrl(null);
@@ -498,7 +498,7 @@ export default function Home() {
 								{/* pls support */}
 								<div className="flex flex-col justify-start items-stretch w-full text-center">
 									<p>
-										Help support the project <Twemoji emoji="🙏" />
+										Graças a deus <Twemoji emoji="🙏" />
 									</p>
 									<button
 										className="flex justify-center items-center gap-1 bg-secondary hover:bg-secondaryAlt mt-3 py-1.5 rounded-[3px] transition"
@@ -518,7 +518,7 @@ export default function Home() {
 												fill="#ffffff"
 											/>
 										</svg>
-										Share the website w/ your friends
+										Compartilhar gif
 									</button>
 									<Tooltip
 										id="share-tooltip"
@@ -546,45 +546,45 @@ export default function Home() {
 												fill="#ffffff"
 											/>
 										</svg>
-										Star the project on GitHub
+										Discord
 									</button>
 								</div>
 							</div>
 						</div>
 						<p className="mb-4 text-center text-gray-400 text-sm">
-							Website made by{" "}
-							<Link href={"https://github.com/ItsPi3141"} className="hover:text-gray-200 underline" target="_blank">
-								ItsPi3141
+							Feito por{" "}
+							<Link href={"https://discord.gg/bgifs"} className="hover:text-gray-200 underline" target="_blank">
+								wz
 							</Link>
 							<br />
-							This project is open-source! View{" "}
+							Feito com muitos amor para{" "}
 							<Link
-								href={"https://github.com/ItsPi3141/discord-fake-avatar-decorations"}
+								href={"https://discord.gg/bgifs"}
 								className="hover:text-gray-200 underline"
 								target="_blank"
 							>
-								source code
+								BLACKOUT GIFS
 							</Link>{" "}
-							on GitHub.
+							receba!
 							<br />
-							This site is NOT affiliated with Discord Inc. in any way. All images and assets belong to Discord Inc.
+							Jogando decoração pro alto, vendo nego mendigar ah, yah
 							<br />
-							Discord Character avatars were created by Bred and Jace. View the collection on{" "}
+							naltic e dezzy fica mendigando 10 conto pra sorteio na brinks.{" "}
 							<Link
-								href={"https://www.figma.com/community/file/1316822758717784787/ultimate-discord-library"}
+								href={"https://discord.gg/brinks"}
 								className="hover:text-gray-200 underline"
 								target="_blank"
 							>
-								Figma
+								BRINKS
 							</Link>
 						</p>
 					</main>
 					<Modal
-						title={"Save Decorated Avatar"}
+						title={"Fazendo decoração"}
 						subtitle={
 							isGeneratingAv
-								? "Please wait while the image is being generated."
-								: "You can save the image below. You may need to extract a still frame from the image if you do not have an active Nitro subscription."
+								? "espera o sistema fazendo a decoração seu bosta!"
+								: "pode demorar um pouco rsrsr."
 						}
 						visible={downloadModalVisible}
 						onClose={() => {
@@ -597,7 +597,7 @@ export default function Home() {
 									<span className="loading-cube"></span>
 									<span className="loading-cube"></span>
 								</span>
-								<p>Creating image...</p>
+								<p>Criando...</p>
 							</div>
 						) : (
 							<>
@@ -648,7 +648,7 @@ export default function Home() {
 															clipRule="evenodd"
 														/>
 													</svg>
-													Extract still image
+													Clica aqui não
 												</button>
 											</div>
 										</div>
@@ -687,7 +687,7 @@ export default function Home() {
 						<span className="loading-cube"></span>
 						<span className="loading-cube"></span>
 					</span>
-					<p>Loading...</p>
+					<p>Carregando...</p>
 				</main>
 			)}
 		</>
