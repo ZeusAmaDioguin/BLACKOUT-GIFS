@@ -1,5 +1,5 @@
-# Discord Fake Avatar Decorations
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+# BLACKOUT GIF'S
+![DISCORD](https://cdn.discordapp.com/icons/1275650092480594051/a_cd8831e1ee812c3597ac10bebdce7f90.gif?size=2048)
 
 ## Getting Started
 
