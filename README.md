@@ -4,11 +4,9 @@
 ## BRINKS
 [DISCORD](https://discord.gg/brinks)
 
-First, run the development server:
+Jogando decoração pro alto e fazendo pobre virar rico.
 
 ```bash
 Feito por: wz
 Painel: privado
 ```
-
-## Contributing
